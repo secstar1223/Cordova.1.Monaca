@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "641476812585",
+    "project_id": "push-notification-9754e",
+    "storage_bucket": "push-notification-9754e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641476812585:android:a6af31714599711be22138",
+        "android_client_info": {
+          "package_name": "it.telemaco.webateca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641476812585-hpt60ddh5kclhpjja6refi24cgsmkq9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdFcS0G0PcGviIRrebAN2JWJUqIzZAwR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641476812585-hpt60ddh5kclhpjja6refi24cgsmkq9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

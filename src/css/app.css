@@ -1,0 +1,270 @@
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hideCategory {
+    display: none;
+}
+
+/* Left Panel right border when it is visible by breakpoint */
+.panel-left.panel-in-breakpoint:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  z-index: 6000;
+}
+
+/* Hide navbar link which opens left panel when it is visible by breakpoint */
+.panel-left.panel-in-breakpoint ~ .view .navbar .panel-open[data-panel="left"] {
+  display: none;
+}
+
+/*
+  Extra borders for main view and left panel for iOS theme when it behaves as panel (before breakpoint size)
+*/
+.ios .panel-left:not(.panel-in-breakpoint).panel-in ~ .view-main:before,
+.ios .panel-left:not(.panel-in-breakpoint).panel-closing ~ .view-main:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  z-index: 6000;
+}
+
+:root {
+  --f7-theme-color: #1657b9;
+}
+
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+body{background:url('/assets/background.jpg') center center no-repeat; background-size:cover;}
+
+
+
+.navbar ~ *, .navbars ~ *{
+  /*margin-top: -64px;*/
+  --f7-page-navbar-offset: calc(var(--f7-navbar-height) + var(--f7-safe-area-top));
+}
+
+.fade-enter-active, .fade-leave-active { transition: opacity .5s; }
+.fade-enter, .fade-leave-to { opacity: 0; }
+.hidden{display:none;}
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.nmt{margin-top:0!important;}
+.nm{margin:0;}
+.noafter:after{display:none!important}
+
+/*Error System*/
+.item-input-outline .item-input-error-message{ margin-bottom: 5px!important; }
+.item-input-outline.item-input-with-error-message .item-input-wrap{margin-bottom:0!important;}
+.md .item-input-error-message, .md .item-input-info, .md .input-error-message, .md .input-info{white-space: unset;}
+
+
+/* Your app custom styles here */
+
+
+input,select{ background:#fafafa!important; }
+
+.panel .page, .panel .list ul{background:#0E3053; color:#fff;}
+.list .item-link .item-inner:before{ color:#fff;}
+.navbar, .navbar a,.toolbar a{color:#fff;}
+.ios .navbar:not(.navbar-large) .navbar-bg, .navbar-bg {background:#0E3053;}
+.panel .navbar-bg,.toolbar {background:#0E3053!important;}
+
+.panel-left .list.inset { background:#0E3053; margin-right: 0px; border-radius:0px; }
+.noRightMargin .list.inset { margin-right: 0px; border-radius:0px; }
+.noRightMargin .item-link .item-inner:before { color: #737373; }
+.panel-left .accordion-item-content{ background:#0E3053;}
+.panel-left .list.inset ul { background:transparent;}
+
+
+.page,#SplashBG{background:url('/assets/background.jpg') center center no-repeat; background-size:cover; width:100%; height:100%;}
+
+
+
+
+/* Custom Page Height to fix infinate scroll content */
+.customPageHeight{ height:calc(100% - 70px);}
+
+
+
+/* Login Style */
+img.logo{max-width:500px; width:100%;}
+.loginButtons{margin-top:10px!important;}
+.loginFields{margin-bottom: 10px!important;margin-top: 0px!important;}
+.smallfont{ font-size: 0.775rem; margin-bottom:0px!important; }
+.smallfont i.icon-checkbox { margin-right: 5px!important; }
+
+/* Blog System */
+.blog-large-image{width:100%;}
+.blog-block-noimg{margin-top:0;}
+.blog-block-img{margin-top:10px;}
+.blog-large-title{color:#000;}
+.blog-large-date{color:#000;}
+.blog-large-category{color:#5f5f5f;}
+.blog-large-excerpt{color: #000;}
+.toolbar-inner .label{font-size: small;}
+.ulTransparent ul{background:transparent;}
+.searchHeading{margin-top:20px}
+.post-date{margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-right: 3px solid #1657b9;
+  text-align: center;
+  padding: .5rem .8rem;
+  font-weight: 700;
+  display: inline-flex;
+  text-transform: none;
+  font-size:1.2rem;
+  color:#777;
+}
+.post-date span{ padding-right:5px; color:#000;}
+
+/* Events System */
+.events-large-image{width:100%;}
+.events-block-noimg{margin-top:0;}
+.events-block-img{margin-top:10px;}
+.events-large-title{color:#000;}
+.events-large-date{color:#000;}
+.events-large-category{color:#5f5f5f;}
+.events-large-excerpt{color: #000;}
+
+
+/* == WordPress WYSIWYG Editor Styles == */
+.entry-content img { margin: 0 0 1.5em 0; }
+.alignleft, img.alignleft { margin-right: 1.5em; display: inline; float: left; }
+.alignright, img.alignright { margin-left: 1.5em; display: inline; float: right; }
+.aligncenter, img.aligncenter { margin-right: auto; margin-left: auto; display: block; clear: both; }
+.wp-caption { margin-bottom: 1.5em; text-align: center; padding-top: 5px; }
+.wp-caption img { border: 0 none; padding: 0; margin: 0; }
+.wp-caption p.wp-caption-text { line-height: 1.5; font-size: 10px; margin: 0; }
+.wp-smiley { margin: 0 !important; max-height: 1em; }
+blockquote.left { margin-right: 20px; text-align: right; margin-left: 0; width: 33%; float: left; }
+blockquote.right { margin-left: 20px; text-align: left; margin-right: 0; width: 33%; float: right; }
+
+
+
+a{color:#1657b9}
+
+/* .item-content .badge{ background:#1657b9; } */
+
+
+.nm{margin:0px!important;}
+.np{padding:0px!important;}
+
+.post-title,.block-title{text-transform: none;}
+.item-title{text-transform: none;font-size:.875rem!important;}
+/* source-serif-pro-regular - latin */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'),
+       url('/fonts/source-serif-pro-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/source-serif-pro-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html,body,p{ font-family:'Source Serif Pro',sans-serif,arial!important;}
+
+.logo{width:100%;}
+.login-box{background: rgb(255, 255, 255,.85); border-radius: 15px; padding:.5rem;}
+
+.homeButton{
+  text-align: center;
+  display: block;
+  width: 100%;
+  background: #1657b9;
+  color: #fff;
+  margin-bottom: 1rem;
+  padding:2rem 1rem;
+  font-weight: bold;
+  font-size:.9rem;
+  border-radius: 5px;
+}
+
+.veryButton{
+  text-align: center;
+  display: block;
+  width: 100%;
+  background: #1657b9;
+  color: #fff;
+  font-weight: bold;
+  font-size:.9rem;
+  border-radius: 5px;
+}
+.homeButton .fa-3x{ margin-bottom:10px;}
+
+.item-title.item-label{ color: #1657b9!important; }
+
+.page-content{background: #dedede;}
+.page-content.login-screen-content{background:transparent;}
+.page.login-screen-page{ background:url('/assets/background.jpg') center center no-repeat; background-size:cover; }
+.formEnclosure{background: #ffffff; padding-bottom: 1rem; border-radius: 15px;}
+
+.panel-right .page-content, .panel-left .page-content{background:transparent;}
+
+/* DataTables Fixes */
+.dataTable {width:100%!important ;}
+.dataTables_wrapper .dataTables_length select,.dataTables_wrapper .dataTables_filter input{display:inline-block}
+.dataTable tbody .odd{background:#fff;}
+.dataTable tbody .even{background:#ececec;}
+.clickable tbody tr:hover{ background:#ccc;}
+.clickable tbody tr td{cursor:pointer;}
+div.dt-buttons { margin-right: 10px; }
+.dataTables_filter,.dataTables_length{margin-bottom:1rem; padding-top:4px;}
+.dataTables_info,.dataTables_paginate{margin-top:1rem;}
+
+/* Dashboard Buttons*/
+.dashButton{ background:#0E3053; color:#fff;padding:2rem; border-radius: 9px; display: block;text-align:center; font-size:1.2rem; margin-bottom:1rem}
+.dashButton i.fa{display:block;font-size: 2rem;padding-bottom:10px}
+.dashButton:hover{opacity:.9}
+
+.termsText textarea{font-size:12px;}
+.loginMessage{font-size:small;}
+
+.leftList .item-media{ min-width:auto!important; }
+.hideTitle{ width:56px;}
+.hideTitle .item-inner{ display:none; }
+
+
+.dataTable .editColumn{display:none}
+.dataTable.collapsed .editColumn{display:block;}
+
+.tblButton{
+  font-size: 10px;
+  height:auto;
+  padding:5px;
+  line-height:1;
+}
+
+.messagebar textarea {
+  color: rgba(255,255,255) !important;
+}
+.messagebar a.link {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Invoice Corrections */
+@media (max-width: 768px){
+  .smallReverse{ 
+    flex-direction: row-reverse;
+  }
+}
